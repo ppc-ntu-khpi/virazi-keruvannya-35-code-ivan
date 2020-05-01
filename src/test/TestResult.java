@@ -3,10 +3,13 @@ package test;
 import domain.Exercise;
 
 public class TestResult {
-
     public static void main(String[] args) {
 
-        int R=10;
-        System.out.println("Area of a circle for R="+R+"m is "+Exercise.Calculate(R)+"m"+'\u00B2');
+        int armstrongNumber = 371;
+        int notArmstrongNumber = 200;
+
+        System.out.println("Is " + armstrongNumber + " an Armstrong number? - " + Exercise.isArmstrongNumber(armstrongNumber));
+        System.out.println("Is " + notArmstrongNumber + " an Armstrong number? - " + Exercise.isArmstrongNumber(notArmstrongNumber));
+        
     }
 }
